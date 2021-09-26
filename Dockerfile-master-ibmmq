@@ -1,0 +1,3 @@
+FROM patrocinio/jmeter-base-ibmmq:latest
+
+EXPOSE 60000
