@@ -29,7 +29,7 @@ ENV PATH $JMETER_HOME/bin:$PATH
 RUN mkdir ${JMETER_HOME}/lib/ibmmq
 COPY lib/ibmmq ${JMETER_HOME}/lib/ibmmq
 RUN echo "" >> ${JMETER_HOME}/bin/user.properties
-RUN echo "user.classpath=lib/ibmmq" >> ${JMETER_HOME}/bin/user.properties
+RUN echo "user.classpath=/jmeter/apache-jmeter-$JMETER_VERSION//lib/ibmmq" >> ${JMETER_HOME}/bin/user.properties
 RUN echo "jmeter.reportgenerator.temp_dir=/tmp" >> ${JMETER_HOME}/bin/user.properties
 
 
